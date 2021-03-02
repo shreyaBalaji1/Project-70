@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { Header } from 'react-native-elements';
 
-export default class writeStoryScreen extends React.Component {
+export default class WriteStoryScreen extends React.Component {
     constructor() {
         super();
         this.state = {

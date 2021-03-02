@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import readStoryScreen from './screens/readStoryScreen';
-import writeStoryScreen from './screens/writeStoryScreen';
+import { StyleSheet, View } from 'react-native';
+import ReadStoryScreen from './screens/ReadStoryScreen';
+import WriteStoryScreen from './screens/WriteStoryScreen';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 
@@ -17,8 +17,8 @@ export default class App extends React.Component {
 }
 
 const tabNavigator = createBottomTabNavigator({
-  readStory: {screen: readStoryScreen},
-  writeStory: {screen: writeStoryScreen}
+  readStory: {screen: ReadStoryScreen},
+  writeStory: {screen: WriteStoryScreen}
 },
 {
   defaultNavigationOptions: ({navigation}) => {
